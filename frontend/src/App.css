@@ -1,0 +1,151 @@
+/* App.css */
+
+/* Base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+}
+
+/* App container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label .range-hint {
+  font-weight: normal;
+  font-size: 12px;
+  color: #888;
+  margin-left: 10px;
+}
+
+/* Inputs */
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input[type="number"]::placeholder,
+input[type="text"]::placeholder {
+  color: #aaa;
+  font-size: 14px;
+  font-style: italic;
+}
+
+input:focus {
+  border-color: #4e9af1;
+  outline: none;
+}
+
+/* Radio buttons */
+.radio-group {
+  display: flex;
+  gap: 30px;
+  padding: 5px 0;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 8px;
+}
+
+.radio-group label {
+  font-weight: normal;
+  color: #444;
+}
+
+/* Submit button */
+button[type="submit"] {
+  background-color: #4e9af1;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #347fd3;
+}
+
+/* Result box */
+.result {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.result.high-risk {
+  background-color: #ffcccc;
+  border: 2px solid #cc0000;
+  color: #cc0000;
+}
+
+.result.low-risk {
+  background-color: #d4edda;
+  border: 2px solid #28a745;
+  color: #155724;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+}
+
+button[type="button"] {
+  background-color: #f44336;
+  color: white;
+}
+
