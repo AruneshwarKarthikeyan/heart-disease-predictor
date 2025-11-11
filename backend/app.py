@@ -9,9 +9,13 @@ CORS(app)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-scaler = joblib.load(r"D:\college_projects\Aruneshwar\scaler.pkl")
-pca = joblib.load(r"D:\college_projects\Aruneshwar\pca.pkl")
-model = joblib.load(r"D:\college_projects\Aruneshwar\mlp_model.pkl")
+scaler_path = os.path.join(BASE_DIR, "../scaler.pkl")
+pca_path = os.path.join(BASE_DIR, "../pca.pkl")
+model_path = os.path.join(BASE_DIR, "../mlp_model.pkl")
+
+scaler = joblib.load(scaler_path)
+pca = joblib.load(pca_path)
+model = joblib.load(model_path)
 
 @app.route('/predict', methods=['POST'])
 def predict():
